@@ -1850,6 +1850,7 @@ header.special:after {
 }
 
 header.special h2 {
+  font-weight: bold;
   margin-bottom: 0;
 }
 
@@ -1866,11 +1867,13 @@ header.special .icon {
   text-align: center;
   top: 1em;
   width: 100%;
+  font-weight: bold;
 }
 
 header.special .icon:before {
   font-size: 3.5em;
   opacity: 0.35;
+  font-weight: bold;
 }
 
 footer > :last-child {
@@ -2975,8 +2978,12 @@ body.index #main {
 
   header.special h2 + p {
     padding-top: 1.25em;
+    font-weight: bold;
   }
 
+  header.special h2 {
+    font-weight: bold;
+  }
   /* Section/Article */
 
   section {
@@ -3301,6 +3308,7 @@ body.index #main {
   header.special .icon {
     font-size: 0.75em;
     top: 1.5em;
+    font-weight: bold;
   }
 
   header p {
