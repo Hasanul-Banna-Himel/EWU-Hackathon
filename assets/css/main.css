@@ -3470,3 +3470,8 @@ body.index #main {
   font-weight: bold;
   max-width: 800px;
 }
+
+.center {
+  width: 50%;
+  margin: auto;
+}
