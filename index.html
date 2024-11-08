@@ -71,15 +71,29 @@
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
 
-									<header>
-										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button">Find Out More</a></li>
-										</ul>
-									</footer>
+									<!-- the DIV that will contain the widget -->
+<div class="weatherWidget" ></div>
+
+<script>
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"MXDQSWPQXCJQ7J6EZS4D7YAY3", //Sign up for your personal key
+       location:"Dhaka, Bangladesh", //Enter an address
+       unitGroup:"metric", //"us" or "metric"
+       forecastDays:7, //how many days forecast to show
+       title:"Dhaka, Bangladesh", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
 
 								</div>
 								<div class="col-4 col-12-narrower imp-narrower">
