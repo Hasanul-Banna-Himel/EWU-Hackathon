@@ -3456,3 +3456,9 @@ body.index #main {
     height: 34px;
   }
 }
+
+.weatherWidget {
+  font-size: 12rem;
+  font-weight: bold;
+  max-width: 800px;
+}
